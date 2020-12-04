@@ -16,4 +16,4 @@ function likes_count($data){
     return $id;
 }
 ?>
-<title>V2</title>
+<title>V2.1</title>
