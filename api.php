@@ -1,6 +1,7 @@
 <?php
 $data = $_GET['url'];
 $proses = likes_count($data);
+echo "Work !!!";
 echo $proses;
 
 function followers_count($data){
