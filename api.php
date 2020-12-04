@@ -13,8 +13,7 @@ function followers_count($data){
 function likes_count($data){
     $id = file_get_contents("".$data."?&__a=1");
     $id = json_decode($id, true);
-    $count = $id['graphql']['shortcode_media']['edge_media_preview_like']['count'];
-    return $count;
+    return $id;
 }
 ?>
 <title>V2</title>
