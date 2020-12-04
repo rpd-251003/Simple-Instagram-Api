@@ -1,8 +1,7 @@
 <?php
 $data = $_GET['url'];
-$proses = likes_count($data);
-echo "Work !!!";
-echo $proses;
+$proses = json_decode(likes_count($data));
+print($proses);
 
 function followers_count($data){
     $id = file_get_contents("https://instagram.com/web/search/topsearch/?query=".$data);
